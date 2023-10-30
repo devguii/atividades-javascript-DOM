@@ -5,3 +5,11 @@ function resolucao01() {
   var resultado = input.toUpperCase().replace(/[0-9]/g, "");
   document.getElementById("paragrafo").innerHTML = resultado;
 }
+
+function resolucao02() {
+  var imagem1 = document.getElementById("imagem1");
+  var imagem2 = document.getElementById("imagem2");
+  var temp = imagem1.src;
+  imagem1.src = imagem2.src;
+  imagem2.src = temp;
+}
