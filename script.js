@@ -27,13 +27,12 @@ function atividade1(num) {
   return fatorial;
 }
 
-function atividade2(n, mensagem) {
-  stringRetorno = mensagem;
-  for (i = 1; i < n; i++) {
-    stringRetorno += " ";
-    stringRetorno += mensagem;
+function atividade4(num) {
+  var tabuada = [];
+  for (i = 0; i < 10; i++) {
+    tabuada[i] = num * (i + 1);
   }
-  return stringRetorno;
+  return tabuada;
 }
 
 function atividade3(num1, num2, operacao) {
@@ -58,4 +57,10 @@ function fatorial() {
   var input = Number(document.getElementById("numeroFatorial").value);
   var resultado = atividade1(input).toString();
   document.getElementById("resultadoFatorial").innerHTML = resultado;
+}
+
+function tabuada() {
+  var input = Number(document.getElementById("numeroTabuada").value);
+  var resultado = atividade4(input).toString();
+  document.getElementById("resultadoTabuada").innerHTML = resultado;
 }
