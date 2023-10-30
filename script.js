@@ -35,22 +35,8 @@ function atividade4(num) {
   return tabuada;
 }
 
-function atividade3(num1, num2, operacao) {
-  switch (operacao) {
-    case "+":
-      return num1 + num2;
-    case "-":
-      return num1 - num2;
-    case "*":
-      return num1 * num2;
-    case "/":
-      if (num2 == 0) {
-        return null;
-      }
-      return num1 / num2;
-    default:
-      return null;
-  }
+function atividade5(num) {
+  return parseInt(num.toString().split("").reverse().join(""));
 }
 
 function fatorial() {
@@ -63,4 +49,10 @@ function tabuada() {
   var input = Number(document.getElementById("numeroTabuada").value);
   var resultado = atividade4(input).toString();
   document.getElementById("resultadoTabuada").innerHTML = resultado;
+}
+
+function invertido() {
+  var input = document.getElementById("numeroInvertido").value;
+  var resultado = atividade5(input).toString();
+  document.getElementById("resultadoInvertido").innerHTML = resultado;
 }
