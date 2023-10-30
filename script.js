@@ -13,3 +13,8 @@ function resolucao02() {
   imagem1.src = imagem2.src;
   imagem2.src = temp;
 }
+
+function resolucao03() {
+  document.body.style.backgroundColor =
+    document.getElementById("colorPicker").value;
+}
