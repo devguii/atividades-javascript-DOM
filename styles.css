@@ -31,6 +31,24 @@ body {
 .imagens {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   width: 50%;
+}
+
+.imagem1 {
+  cursor: pointer;
+  width: 90px;
+  height: 100px;
+}
+
+.imagemChange {
+  width: 70px;
+  height: 70px;
+}
+
+.imagem2 {
+  cursor: pointer;
+  width: 90px;
+  height: 100px;
 }
