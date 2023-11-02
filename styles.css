@@ -85,28 +85,50 @@ body {
 .calculadora {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border: solid 2px;
-  width: 60%;
+  width: 40%;
   background-color: midnightblue;
+  gap: 1rem;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 .display {
   display: flex;
   width: 90%;
+  height: 50px;
+  background-color: black;
+  border: solid 1px;
+  border-color: green;
 }
 
 .buttons {
   display: flex;
   flex-direction: row;
+  width: 90%;
+}
+
+.number-area {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 100%;
 }
 
 .numbers {
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-gap: 10px;
-  background-color: snow;
-  padding: 10px;
-  width: 80%;
+  grid-template-columns: auto auto auto;
+  grid-gap: 5%;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  height: min-content;
+  width: 100%;
+  height: 70%;
+  padding-top: 5%;
+  padding-bottom: 3%;
 }
 
 .number {
@@ -115,13 +137,44 @@ body {
   width: fit-content;
   background-color: dodgerblue;
   color: white;
+  cursor: pointer;
+  font-size: large;
+  width: 100%;
+}
+
+.zero-number {
+  border: none;
+  border-radius: 100%;
+  background-color: dodgerblue;
+  color: white;
+  cursor: pointer;
+  font-size: large;
+  width: 8%;
+}
+
+.zero-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30%;
 }
 
 .operations {
   display: flex;
   flex-direction: column;
-  width: 20%;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  width: 7%;
 }
 
 .operator {
+  border: none;
+  border-radius: 100%;
+  width: 100%;
+  background-color: crimson;
+  color: mintcream;
+  cursor: pointer;
+  font-size: large;
 }
